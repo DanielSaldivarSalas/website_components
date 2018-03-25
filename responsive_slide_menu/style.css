@@ -9,16 +9,16 @@ body{
   background-color:#3b5998;
   overflow:hidden;
   height: auto;
-  padding: 1rem 1rem 1rem 1rem;
-  display: flex;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .menu-icon {
-  margin: 0 1rem 0 0;
+  margin: 0 1rem 0 0.25rem;
 }
 .navbar-logo {
   flex: 1;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 0 0 0 0.5rem;
 }
 .open-slide {
 }
@@ -26,12 +26,11 @@ body{
 .navbar-nav{
   text-decoration: none;
   display: flex;
-  flex:1 ;
+
 }
 .navbar-nav li{
   flex: 1;
 }
-
 
 .navbar ul {
   margin: 8px 0 0 0;
@@ -99,5 +98,25 @@ body{
 
 @media (max-width:568px){
  .navbar-nav {display:none}
+ .navbar{
+  display:flex;
+}
+.navbar-nav{
+  flex: 1;
+}
+}
+@media (min-width:780px){
+  .navbar{
+    display:flex;
+    justify-content: flex-end;
+  }
+
+  .menu-icon{
+    flex:1;
+  }
+  .navbar-nav{
+    flex: 1;
+ }
+
 }
 
